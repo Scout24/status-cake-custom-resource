@@ -18,7 +18,7 @@ Parameters:
   checkRate:
     Description: how often check url
     Type: String
-    Default: sqs
+    Default: 900
 Resources:
   statusCakeLambdaExecutionRole:
     Type: AWS::IAM::Role
