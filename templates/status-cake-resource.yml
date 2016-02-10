@@ -41,7 +41,7 @@ Resources:
       - PolicyDocument:
           Statement:
           - Action:
-            - '*'
+            - '*:*'
             Effect: Allow
             Resource:
             - '*'
