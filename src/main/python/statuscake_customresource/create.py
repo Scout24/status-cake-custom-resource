@@ -18,6 +18,7 @@ def create_status_cake(event):
     response_json = json.loads(response)
     output['Status'] = 'SUCCESS'
     output['PhysicalResourceId'] = response_json['InsertID']
+    print(output)
 
     requests.put(event['ResponseURL'], data=json.dumps(output))
 
