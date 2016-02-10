@@ -37,7 +37,7 @@ def initialize(project):
             'lambda_file_access_control',
             os.environ.get('LAMBDA_FILE_ACCESS_CONTROL'))
 
-    project.set_property('template_files', [('templates', 'cfn-custom-resource.yml')])
+    project.set_property('template_files', [('templates', 'status-cake-resource.yml')])
     project.set_property('template_file_access_control', os.environ.get('LAMBDA_FILE_ACCESS_CONTROL'))
     project.set_property('template_key_prefix', 'cfn_templates/')
 
