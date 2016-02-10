@@ -41,7 +41,9 @@ Resources:
       - PolicyDocument:
           Statement:
           - Action:
-            - '*:*'
+            - 'cloudformation:*'
+            - 'cloudwatch:*'
+            - 'logs:*'
             Effect: Allow
             Resource:
             - '*'
