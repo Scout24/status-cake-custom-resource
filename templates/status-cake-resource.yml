@@ -56,7 +56,9 @@ Resources:
         - Arn
       WebsiteUrl: "|ref|websiteUrl"
       WebsiteName: "|ref|websiteName"
-      checkRate: "|ref|checkRate"
+      CheckRate: "|ref|checkRate"
+      ApiKey: "|ref|apiKey"
+      Username: "|ref|userName"
   customResourcestatusCake:
    Type: AWS::Lambda::Function
    Properties:
