@@ -21,7 +21,7 @@ version = VCSRevision().get_git_revision_count()
 description = open("README.rst").read()
 
 
-default_task = ['clean', 'analyze', 'package']
+default_task = ['clean', 'analyze', 'package', 'package_lambda_code']
 
 @init
 def initialize(project):
