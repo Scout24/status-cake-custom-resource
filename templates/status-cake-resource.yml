@@ -60,7 +60,7 @@ Resources:
       WebsiteName: "|ref|websiteName"
       CheckRate: "|ref|checkRate"
       ApiKey: "|ref|apiKey"
-      Username: "|ref|userName"
+      UserName: "|ref|userName"
   customResourcestatusCake:
    Type: AWS::Lambda::Function
    Properties:
