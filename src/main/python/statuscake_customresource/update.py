@@ -7,9 +7,5 @@ def update_status_cake(event):
     headers = {'API': properties['apiKey'], 'Username': properties['userName']}
     r = requests.put('https://www.statuscake.com/API/Tests/Update', data=parameters, headers=headers)
     response = r.text
-    print(response)
 
-
-event=dict()
-update_status_cake(event)
 
