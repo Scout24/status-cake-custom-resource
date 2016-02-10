@@ -23,7 +23,7 @@ Parameters:
     Description: your api key
     Type: String
   userName:
-    Desciption: yourn username
+    Description: yourn username
     Type: String
 Resources:
   statusCakeLambdaExecutionRole:
