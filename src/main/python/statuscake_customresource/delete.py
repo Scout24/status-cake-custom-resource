@@ -8,8 +8,6 @@ def delete_status_cake(event):
     headers = {'API': properties['apiKey'], 'Username': properties['userName']}
     r = requests.delete('https://www.statuscake.com/API/Tests/Details', data=parameters, headers=headers)
     response = r.text
-    print(response)
 
 
-event = dict()
-delete_status_cake(event)
+
