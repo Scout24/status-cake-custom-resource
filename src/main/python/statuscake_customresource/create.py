@@ -4,8 +4,8 @@ import json
 
 def create_status_cake(event):
     properties = event['ResourceProperties']
-    parameters = {'WebsiteName': properties['websiteName'], 'WebsiteURL': properties['websiteUrl'], 'CheckRate': properties['checkRate']}
-    headers = {'API':  properties['apiKey'], 'Username': properties['userName']}
+    parameters = {'WebsiteName': properties['WebsiteName'], 'WebsiteURL': properties['WebsiteUrl'], 'CheckRate': properties['CheckRate']}
+    headers = {'API':  properties['ApiKey'], 'Username': properties['UserName']}
     r = requests.put('https://www.statuscake.com/API/Tests/Update', data=parameters, headers=headers)
     response = r.text
 
