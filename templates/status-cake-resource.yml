@@ -19,6 +19,12 @@ Parameters:
     Description: how often check url
     Type: String
     Default: 900
+  apiKey:
+    Description: your api key
+    Type: String
+  userName:
+    Desciption: yourn username
+    Type: String
 Resources:
   statusCakeLambdaExecutionRole:
     Type: AWS::IAM::Role

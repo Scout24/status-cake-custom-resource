@@ -3,8 +3,9 @@ import json
 
 
 def create_status_cake(event):
-    parameters = {'WebsiteName': 'www.autoscout24.de', 'WebsiteURL': 'www.autoscout24.de', 'CheckRate': 900}
-    headers = {'API': 'xxxx', 'Username': 'xxxx'}
+    properties = event['ResourceProperties']
+    parameters = {'WebsiteName': properties['websiteName'], 'WebsiteURL': properties['websiteUrl'], 'CheckRate': properties['checkRate']}
+    headers = {'API':  properties['apiKey'], 'Username': properties['userName']}
     r = requests.put('https://www.statuscake.com/API/Tests/Update', data=parameters, headers=headers)
     response = r.text
 
@@ -15,6 +16,5 @@ def create_status_cake(event):
         'PhysicalResourceId': 'failed'
     }
     response_json = json.loads(response)
-    InsertID = response_json['InsertID']
     output['PhysicalResourceId'] = response_json['InsertID']
 
