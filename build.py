@@ -13,9 +13,12 @@ use_plugin("pypi:pybuilder_aws_plugin")
 
 
 
-name = "statusCake_customresource"
+name = "status-cake-custom-resource"
 default_task = "publish"
 license = 'Apache License 2.0'
+
+version = VCSRevision().get_git_revision_count()
+description = open("README.rst").read()
 
 
 default_task = ['clean', 'analyze', 'package']

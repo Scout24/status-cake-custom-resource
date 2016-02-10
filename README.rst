@@ -1,0 +1,1 @@
+# lambda function to create Status Cake website tests
