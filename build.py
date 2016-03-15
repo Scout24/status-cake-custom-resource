@@ -33,8 +33,8 @@ def initialize(project):
     project.depends_on('requests')
 
     project.set_property('bucket_name',
-                         os.environ.get('BUCKET_NAME_FOR_UPLOAD'
-                                        'cake-distribution-bucket'))
+                         os.environ.get('BUCKET_NAME_FOR_UPLOAD'),
+                         'cake-distribution-bucket')
     project.set_property('template_files',
                          [('templates', 'status-cake-resource.yml')])
     project.set_property('template_key_prefix', 'cfn_templates/')
